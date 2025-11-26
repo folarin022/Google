@@ -1,58 +1,121 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #ffffff;
+    text-align: center;
+}
+
+.top-nav {
+    position: absolute;
+    top: 15px;
+    right: 20px;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     align-items: center;
+    font-size: 14px;
 }
 
-.google-logo {
-    margin-top: 120px;
+.top-nav a {
+    color: #3c4043;
+    text-decoration: none;
 }
 
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.apps-icon {
+    width: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.apps-icon:hover {
+    opacity: 1;
+}
+
+.user-icon {
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-icon:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 .google-logo img {
     width: 272px;
-    height: auto;
+    margin-top: 150px;
 }
 
 .search-container {
     margin-top: 30px;
-    text-align: center;
 }
 
-
 .search-bar {
-    width: 480px;
-    padding: 12px 20px;
-    border-radius: 25px;
+    width: 580px;
+    padding: 14px 20px;
+    border-radius: 30px;
     border: 1px solid #dcdcdc;
-    outline: none;
     font-size: 16px;
+    outline: none;
+    background-color: white;
+    transition: 0.25s ease;
 }
 
 .search-bar:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(32, 33, 36, 0.28);
+    transform: scale(1.01);
 }
 
 .buttons {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-.search-button,
-.lucky-button {
-    padding: 10px 18px;
-    margin: 5px;
-    border: none;
+.google-btn {
     background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #3c4043;
     border-radius: 5px;
+    margin: 5px;
     cursor: pointer;
+}
+
+.google-btn:hover {
+    border-color: #c6c6c6;
+    background-color: #f1f3f4;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #70757a;
     font-size: 14px;
 }
 
-.search-button:hover,
-.lucky-button:hover {
-    border: 1px solid #c6c6c6;
-    background-color: #f1f1f1;
+.footer-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.footer-links a {
+    color: #70757a;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
